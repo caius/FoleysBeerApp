@@ -12,7 +12,7 @@
 		0931EB74143719F9007363E4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0931EB73143719F9007363E4 /* CoreGraphics.framework */; };
 		0931EB7A143719F9007363E4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0931EB78143719F9007363E4 /* InfoPlist.strings */; };
 		0931EB7C143719F9007363E4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0931EB7B143719F9007363E4 /* main.m */; };
-		0931EB80143719F9007363E4 /* FoleysBeerAppAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0931EB7F143719F9007363E4 /* FoleysBeerAppAppDelegate.m */; };
+		0931EB80143719F9007363E4 /* FoleysBeerAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0931EB7F143719F9007363E4 /* FoleysBeerAppDelegate.m */; };
 		0931EB83143719F9007363E4 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0931EB81143719F9007363E4 /* MainWindow.xib */; };
 		0931EB86143719F9007363E4 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0931EB85143719F9007363E4 /* RootViewController.m */; };
 		0931EB89143719F9007363E4 /* RootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0931EB87143719F9007363E4 /* RootViewController.xib */; };
@@ -23,6 +23,21 @@
 		0931EB9C143719F9007363E4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0931EB9A143719F9007363E4 /* InfoPlist.strings */; };
 		0931EB9E143719F9007363E4 /* FoleysBeerAppTests.h in Resources */ = {isa = PBXBuildFile; fileRef = 0931EB9D143719F9007363E4 /* FoleysBeerAppTests.h */; };
 		0931EBA0143719F9007363E4 /* FoleysBeerAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0931EB9F143719F9007363E4 /* FoleysBeerAppTests.m */; };
+		0931EBAA1437304B007363E4 /* LRResty.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0931EBA91437304B007363E4 /* LRResty.framework */; };
+		0931EBAB1437304B007363E4 /* LRResty.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0931EBA91437304B007363E4 /* LRResty.framework */; };
+		0931EBB214373760007363E4 /* CDataScanner.m in Sources */ = {isa = PBXBuildFile; fileRef = 0931EBB114373760007363E4 /* CDataScanner.m */; };
+		0931EBB314373760007363E4 /* CDataScanner.m in Sources */ = {isa = PBXBuildFile; fileRef = 0931EBB114373760007363E4 /* CDataScanner.m */; };
+		0931EBC4143738AB007363E4 /* CJSONDeserializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 0931EBBE143738AB007363E4 /* CJSONDeserializer.m */; };
+		0931EBC5143738AB007363E4 /* CJSONDeserializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 0931EBBE143738AB007363E4 /* CJSONDeserializer.m */; };
+		0931EBC6143738AB007363E4 /* CJSONScanner.m in Sources */ = {isa = PBXBuildFile; fileRef = 0931EBC0143738AB007363E4 /* CJSONScanner.m */; };
+		0931EBC7143738AB007363E4 /* CJSONScanner.m in Sources */ = {isa = PBXBuildFile; fileRef = 0931EBC0143738AB007363E4 /* CJSONScanner.m */; };
+		0931EBC8143738AB007363E4 /* CJSONSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 0931EBC2143738AB007363E4 /* CJSONSerializer.m */; };
+		0931EBC9143738AB007363E4 /* CJSONSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 0931EBC2143738AB007363E4 /* CJSONSerializer.m */; };
+		0931EBCE143738B3007363E4 /* CDataScanner_Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 0931EBCB143738B3007363E4 /* CDataScanner_Extensions.m */; };
+		0931EBCF143738B3007363E4 /* CDataScanner_Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 0931EBCB143738B3007363E4 /* CDataScanner_Extensions.m */; };
+		0931EBD0143738B3007363E4 /* NSDictionary_JSONExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 0931EBCD143738B3007363E4 /* NSDictionary_JSONExtensions.m */; };
+		0931EBD1143738B3007363E4 /* NSDictionary_JSONExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 0931EBCD143738B3007363E4 /* NSDictionary_JSONExtensions.m */; };
+		0962F93C1440E7E90051C336 /* Cellar.m in Sources */ = {isa = PBXBuildFile; fileRef = 0962F93B1440E7E90051C336 /* Cellar.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,8 +59,8 @@
 		0931EB79143719F9007363E4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		0931EB7B143719F9007363E4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		0931EB7D143719F9007363E4 /* FoleysBeerApp-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FoleysBeerApp-Prefix.pch"; sourceTree = "<group>"; };
-		0931EB7E143719F9007363E4 /* FoleysBeerAppAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FoleysBeerAppAppDelegate.h; sourceTree = "<group>"; };
-		0931EB7F143719F9007363E4 /* FoleysBeerAppAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FoleysBeerAppAppDelegate.m; sourceTree = "<group>"; };
+		0931EB7E143719F9007363E4 /* FoleysBeerAppDelegate.h */ = {isa = PBXFileReference; path = FoleysBeerAppDelegate.h; sourceTree = "<group>"; };
+		0931EB7F143719F9007363E4 /* FoleysBeerAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FoleysBeerAppDelegate.m; sourceTree = "<group>"; };
 		0931EB82143719F9007363E4 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
 		0931EB84143719F9007363E4 /* RootViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
 		0931EB85143719F9007363E4 /* RootViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
@@ -56,6 +71,22 @@
 		0931EB9B143719F9007363E4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		0931EB9D143719F9007363E4 /* FoleysBeerAppTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FoleysBeerAppTests.h; sourceTree = "<group>"; };
 		0931EB9F143719F9007363E4 /* FoleysBeerAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FoleysBeerAppTests.m; sourceTree = "<group>"; };
+		0931EBA91437304B007363E4 /* LRResty.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = LRResty.framework; sourceTree = "<group>"; };
+		0931EBB014373760007363E4 /* CDataScanner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDataScanner.h; sourceTree = "<group>"; };
+		0931EBB114373760007363E4 /* CDataScanner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDataScanner.m; sourceTree = "<group>"; };
+		0931EBBD143738AB007363E4 /* CJSONDeserializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CJSONDeserializer.h; path = JSON/CJSONDeserializer.h; sourceTree = "<group>"; };
+		0931EBBE143738AB007363E4 /* CJSONDeserializer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CJSONDeserializer.m; path = JSON/CJSONDeserializer.m; sourceTree = "<group>"; };
+		0931EBBF143738AB007363E4 /* CJSONScanner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CJSONScanner.h; path = JSON/CJSONScanner.h; sourceTree = "<group>"; };
+		0931EBC0143738AB007363E4 /* CJSONScanner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CJSONScanner.m; path = JSON/CJSONScanner.m; sourceTree = "<group>"; };
+		0931EBC1143738AB007363E4 /* CJSONSerializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CJSONSerializer.h; path = JSON/CJSONSerializer.h; sourceTree = "<group>"; };
+		0931EBC2143738AB007363E4 /* CJSONSerializer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CJSONSerializer.m; path = JSON/CJSONSerializer.m; sourceTree = "<group>"; };
+		0931EBC3143738AB007363E4 /* JSONRepresentation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JSONRepresentation.h; path = JSON/JSONRepresentation.h; sourceTree = "<group>"; };
+		0931EBCA143738B3007363E4 /* CDataScanner_Extensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CDataScanner_Extensions.h; path = Extensions/CDataScanner_Extensions.h; sourceTree = "<group>"; };
+		0931EBCB143738B3007363E4 /* CDataScanner_Extensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CDataScanner_Extensions.m; path = Extensions/CDataScanner_Extensions.m; sourceTree = "<group>"; };
+		0931EBCC143738B3007363E4 /* NSDictionary_JSONExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NSDictionary_JSONExtensions.h; path = Extensions/NSDictionary_JSONExtensions.h; sourceTree = "<group>"; };
+		0931EBCD143738B3007363E4 /* NSDictionary_JSONExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NSDictionary_JSONExtensions.m; path = Extensions/NSDictionary_JSONExtensions.m; sourceTree = "<group>"; };
+		0962F93A1440E7E90051C336 /* Cellar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Cellar.h; sourceTree = "<group>"; };
+		0962F93B1440E7E90051C336 /* Cellar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Cellar.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +97,7 @@
 				0931EB70143719F9007363E4 /* UIKit.framework in Frameworks */,
 				0931EB72143719F9007363E4 /* Foundation.framework in Frameworks */,
 				0931EB74143719F9007363E4 /* CoreGraphics.framework in Frameworks */,
+				0931EBAA1437304B007363E4 /* LRResty.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +109,7 @@
 				0931EB92143719F9007363E4 /* UIKit.framework in Frameworks */,
 				0931EB93143719F9007363E4 /* Foundation.framework in Frameworks */,
 				0931EB94143719F9007363E4 /* CoreGraphics.framework in Frameworks */,
+				0931EBAB1437304B007363E4 /* LRResty.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -105,6 +138,7 @@
 		0931EB6E143719F9007363E4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				0931EBA91437304B007363E4 /* LRResty.framework */,
 				0931EB6F143719F9007363E4 /* UIKit.framework */,
 				0931EB71143719F9007363E4 /* Foundation.framework */,
 				0931EB73143719F9007363E4 /* CoreGraphics.framework */,
@@ -116,13 +150,16 @@
 		0931EB75143719F9007363E4 /* FoleysBeerApp */ = {
 			isa = PBXGroup;
 			children = (
-				0931EB7E143719F9007363E4 /* FoleysBeerAppAppDelegate.h */,
-				0931EB7F143719F9007363E4 /* FoleysBeerAppAppDelegate.m */,
+				0931EBAF1437374C007363E4 /* TouchJSON */,
+				0931EB7E143719F9007363E4 /* FoleysBeerAppDelegate.h */,
+				0931EB7F143719F9007363E4 /* FoleysBeerAppDelegate.m */,
 				0931EB81143719F9007363E4 /* MainWindow.xib */,
 				0931EB84143719F9007363E4 /* RootViewController.h */,
 				0931EB85143719F9007363E4 /* RootViewController.m */,
 				0931EB87143719F9007363E4 /* RootViewController.xib */,
 				0931EB76143719F9007363E4 /* Supporting Files */,
+				0962F93A1440E7E90051C336 /* Cellar.h */,
+				0962F93B1440E7E90051C336 /* Cellar.m */,
 			);
 			path = FoleysBeerApp;
 			sourceTree = "<group>";
@@ -155,6 +192,26 @@
 				0931EB9A143719F9007363E4 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0931EBAF1437374C007363E4 /* TouchJSON */ = {
+			isa = PBXGroup;
+			children = (
+				0931EBCA143738B3007363E4 /* CDataScanner_Extensions.h */,
+				0931EBCB143738B3007363E4 /* CDataScanner_Extensions.m */,
+				0931EBCC143738B3007363E4 /* NSDictionary_JSONExtensions.h */,
+				0931EBCD143738B3007363E4 /* NSDictionary_JSONExtensions.m */,
+				0931EBBD143738AB007363E4 /* CJSONDeserializer.h */,
+				0931EBBE143738AB007363E4 /* CJSONDeserializer.m */,
+				0931EBBF143738AB007363E4 /* CJSONScanner.h */,
+				0931EBC0143738AB007363E4 /* CJSONScanner.m */,
+				0931EBC1143738AB007363E4 /* CJSONSerializer.h */,
+				0931EBC2143738AB007363E4 /* CJSONSerializer.m */,
+				0931EBC3143738AB007363E4 /* JSONRepresentation.h */,
+				0931EBB014373760007363E4 /* CDataScanner.h */,
+				0931EBB114373760007363E4 /* CDataScanner.m */,
+			);
+			name = TouchJSON;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -266,8 +323,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				0931EB7C143719F9007363E4 /* main.m in Sources */,
-				0931EB80143719F9007363E4 /* FoleysBeerAppAppDelegate.m in Sources */,
+				0931EB80143719F9007363E4 /* FoleysBeerAppDelegate.m in Sources */,
 				0931EB86143719F9007363E4 /* RootViewController.m in Sources */,
+				0931EBB214373760007363E4 /* CDataScanner.m in Sources */,
+				0931EBC4143738AB007363E4 /* CJSONDeserializer.m in Sources */,
+				0931EBC6143738AB007363E4 /* CJSONScanner.m in Sources */,
+				0931EBC8143738AB007363E4 /* CJSONSerializer.m in Sources */,
+				0931EBCE143738B3007363E4 /* CDataScanner_Extensions.m in Sources */,
+				0931EBD0143738B3007363E4 /* NSDictionary_JSONExtensions.m in Sources */,
+				0962F93C1440E7E90051C336 /* Cellar.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,6 +340,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				0931EBA0143719F9007363E4 /* FoleysBeerAppTests.m in Sources */,
+				0931EBB314373760007363E4 /* CDataScanner.m in Sources */,
+				0931EBC5143738AB007363E4 /* CJSONDeserializer.m in Sources */,
+				0931EBC7143738AB007363E4 /* CJSONScanner.m in Sources */,
+				0931EBC9143738AB007363E4 /* CJSONSerializer.m in Sources */,
+				0931EBCF143738B3007363E4 /* CDataScanner_Extensions.m in Sources */,
+				0931EBD1143738B3007363E4 /* NSDictionary_JSONExtensions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -371,9 +441,17 @@
 		0931EBA4143719F9007363E4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FoleysBeerApp/FoleysBeerApp-Prefix.pch";
 				INFOPLIST_FILE = "FoleysBeerApp/FoleysBeerApp-Info.plist";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -382,9 +460,17 @@
 		0931EBA5143719F9007363E4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FoleysBeerApp/FoleysBeerApp-Prefix.pch";
 				INFOPLIST_FILE = "FoleysBeerApp/FoleysBeerApp-Info.plist";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -397,6 +483,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+					"\"$(SRCROOT)\"",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FoleysBeerApp/FoleysBeerApp-Prefix.pch";
@@ -414,6 +501,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+					"\"$(SRCROOT)\"",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FoleysBeerApp/FoleysBeerApp-Prefix.pch";
@@ -443,6 +531,7 @@
 				0931EBA5143719F9007363E4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0931EBA6143719F9007363E4 /* Build configuration list for PBXNativeTarget "FoleysBeerAppTests" */ = {
 			isa = XCConfigurationList;
@@ -451,6 +540,7 @@
 				0931EBA8143719F9007363E4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

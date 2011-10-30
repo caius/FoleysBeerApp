@@ -10,39 +10,32 @@
 
 @implementation RootViewController
 
+@synthesize beers = _beers;
+@synthesize drunkBeers = _drunkBeers;
 
 - (void)viewDidLoad
 {
   [super viewDidLoad];
+  
+  self.drunkBeers = [NSMutableArray array];
+  
+  [[LRResty client] get:FoleyBeerJSONURL withBlock:^(LRRestyResponse *r) {
+//    NSLog(@"Got google, %@", [r asString]);
+    NSLog(@"Got json response");
+    
+    NSDictionary *data = [NSDictionary dictionaryWithJSONString:[r asString] error:nil];
+    self.beers = [data objectForKey:@"current"];
+    NSLog(@"%d beers saved", [self.beers count]);
+    
+    [self.tableView reloadData];
+  }];
+  
 }
 
-- (void)viewWillAppear:(BOOL)animated
+- (IBAction) clearSelections:(id)sender
 {
-    [super viewWillAppear:animated];
+  
 }
-
-- (void)viewDidAppear:(BOOL)animated
-{
-    [super viewDidAppear:animated];
-}
-
-- (void)viewWillDisappear:(BOOL)animated
-{
-	[super viewWillDisappear:animated];
-}
-
-- (void)viewDidDisappear:(BOOL)animated
-{
-	[super viewDidDisappear:animated];
-}
-
-/*
- // Override to allow orientations other than the default portrait orientation.
-- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
-	// Return YES for supported orientations.
-	return (interfaceOrientation == UIInterfaceOrientationPortrait);
-}
- */
 
 // Customize the number of sections in the table view.
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
@@ -52,21 +45,39 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-  return 0;
+  return self.beers.count;
 }
 
 // Customize the appearance of table view cells.
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    static NSString *CellIdentifier = @"Cell";
-    
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
-    if (cell == nil) {
-        cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier] autorelease];
-    }
+  NSLog(@"cellForRowAtIndexPath");
+  static NSString *CellIdentifier = @"Cell";
+
+  UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+  if (cell == nil) {
+    cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:CellIdentifier] autorelease];
+  }
 
   // Configure the cell.
-    return cell;
+  NSDictionary *beer = [self.beers objectAtIndex:indexPath.row];
+  if (beer) {
+    // Figure out if it's already been selected
+//    if ([self.drunkBeers indexOfObject:[beer objectForKey:@"beer"]] != NSNotFound) {
+//      [beer setValue:[NSNumber numberWithBool:YES] forKey:@"drunk"];
+//    }
+    
+//    if ([[beer objectForKey:@"drunk"] isEqualToNumber:[NSNumber numberWithBool:YES]]) {
+//      [[cell textLabel] setTextColor:[UIColor blueColor]];
+//    }
+    
+    NSString *beerName = [NSString stringWithFormat:@"%@ - %@", [beer objectForKey:@"brewer"], [beer objectForKey:@"beer"]];
+    NSString *beerSummary = [NSString stringWithFormat:@"%@", [beer objectForKey:@"abv"]];
+    [[cell textLabel] setText:beerName];
+    [[cell detailTextLabel] setText:beerSummary];
+  }
+  
+  return cell;
 }
 
 /*
@@ -112,34 +123,16 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    /*
-    <#DetailViewController#> *detailViewController = [[<#DetailViewController#> alloc] initWithNibName:@"<#Nib name#>" bundle:nil];
-    // ...
-    // Pass the selected object to the new view controller.
-    [self.navigationController pushViewController:detailViewController animated:YES];
-    [detailViewController release];
-	*/
-}
-
-- (void)didReceiveMemoryWarning
-{
-    // Releases the view if it doesn't have a superview.
-    [super didReceiveMemoryWarning];
-    
-    // Relinquish ownership any cached data, images, etc that aren't in use.
-}
-
-- (void)viewDidUnload
-{
-    [super viewDidUnload];
-
-    // Relinquish ownership of anything that can be recreated in viewDidLoad or on demand.
-    // For example: self.myOutlet = nil;
-}
-
-- (void)dealloc
-{
-    [super dealloc];
+  UITableViewCell *c = [self.tableView cellForRowAtIndexPath:indexPath];
+  if ([[[c textLabel] textColor] isEqual:[UIColor blueColor]]) {
+    [[c textLabel] setTextColor:[UIColor blackColor]];
+  } else {
+    [[c textLabel] setTextColor:[UIColor blueColor]];
+  }
+  
+  [self.tableView deselectRowAtIndexPath:indexPath animated:YES];
+  
+//  [self.tableView reloadData];
 }
 
 @end

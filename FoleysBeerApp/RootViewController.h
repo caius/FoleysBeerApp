@@ -8,6 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
+#define FoleyBeerJSONURL @"http://mrfoleys.caius.name/index.json"
+
 @interface RootViewController : UITableViewController
+
+@property (copy) NSArray *beers;
+@property (assign) NSMutableArray *drunkBeers;
 
 @end

@@ -6,12 +6,20 @@
 //  Copyright 2011 Swedishcampground Software. All rights reserved.
 //
 
-#import "FoleysBeerAppAppDelegate.h"
+#import "FoleysBeerAppDelegate.h"
+#import "Cellar.h"
 
-@implementation FoleysBeerAppAppDelegate
+@interface FoleysBeerAppDelegate ()
 
-@synthesize window = _window;
-@synthesize navigationController = _navigationController;
+@property (nonatomic, retain, readwrite) Cellar *cellar;
+
+@end
+
+@implementation FoleysBeerAppDelegate
+
+@synthesize window = _window,
+            navigationController = _navigationController,
+            cellar = _cellar;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {

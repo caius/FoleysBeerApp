@@ -8,10 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
-@interface FoleysBeerAppAppDelegate : NSObject <UIApplicationDelegate>
+@class Cellar;
+
+@interface FoleysBeerAppDelegate : NSObject <UIApplicationDelegate>
 
 @property (nonatomic, retain) IBOutlet UIWindow *window;
-
 @property (nonatomic, retain) IBOutlet UINavigationController *navigationController;
+@property (nonatomic, retain, readonly) Cellar *cellar;
 
 @end
