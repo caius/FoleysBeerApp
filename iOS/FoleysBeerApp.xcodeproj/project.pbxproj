@@ -59,7 +59,7 @@
 		0931EB79143719F9007363E4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		0931EB7B143719F9007363E4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		0931EB7D143719F9007363E4 /* FoleysBeerApp-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FoleysBeerApp-Prefix.pch"; sourceTree = "<group>"; };
-		0931EB7E143719F9007363E4 /* FoleysBeerAppDelegate.h */ = {isa = PBXFileReference; path = FoleysBeerAppDelegate.h; sourceTree = "<group>"; };
+		0931EB7E143719F9007363E4 /* FoleysBeerAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FoleysBeerAppDelegate.h; sourceTree = "<group>"; };
 		0931EB7F143719F9007363E4 /* FoleysBeerAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FoleysBeerAppDelegate.m; sourceTree = "<group>"; };
 		0931EB82143719F9007363E4 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
 		0931EB84143719F9007363E4 /* RootViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
@@ -259,6 +259,7 @@
 		0931EB62143719F9007363E4 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastUpgradeCheck = 0420;
 				ORGANIZATIONNAME = "Swedishcampground Software";
 			};
 			buildConfigurationList = 0931EB65143719F9007363E4 /* Build configuration list for PBXProject "FoleysBeerApp" */;
@@ -447,6 +448,7 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FoleysBeerApp/FoleysBeerApp-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INFOPLIST_FILE = "FoleysBeerApp/FoleysBeerApp-Info.plist";
 				OTHER_LDFLAGS = (
 					"-ObjC",
@@ -466,6 +468,7 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FoleysBeerApp/FoleysBeerApp-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INFOPLIST_FILE = "FoleysBeerApp/FoleysBeerApp-Info.plist";
 				OTHER_LDFLAGS = (
 					"-ObjC",
@@ -487,6 +490,7 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FoleysBeerApp/FoleysBeerApp-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INFOPLIST_FILE = "FoleysBeerAppTests/FoleysBeerAppTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
@@ -505,6 +509,7 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FoleysBeerApp/FoleysBeerApp-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INFOPLIST_FILE = "FoleysBeerAppTests/FoleysBeerAppTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
