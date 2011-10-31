@@ -15,4 +15,7 @@
 @property (copy) NSArray *beers;
 @property (assign) NSMutableArray *drunkBeers;
 
+- (UIImage*) emptyPintImage;
+- (UIImage*) fullPintImage;
+
 @end

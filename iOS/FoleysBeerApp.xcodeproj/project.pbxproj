@@ -38,6 +38,10 @@
 		0931EBD0143738B3007363E4 /* NSDictionary_JSONExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 0931EBCD143738B3007363E4 /* NSDictionary_JSONExtensions.m */; };
 		0931EBD1143738B3007363E4 /* NSDictionary_JSONExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 0931EBCD143738B3007363E4 /* NSDictionary_JSONExtensions.m */; };
 		0962F93C1440E7E90051C336 /* Cellar.m in Sources */ = {isa = PBXBuildFile; fileRef = 0962F93B1440E7E90051C336 /* Cellar.m */; };
+		0993905B145E139D00AA5D31 /* empty_pint_glass.png in Resources */ = {isa = PBXBuildFile; fileRef = 09939059145E139D00AA5D31 /* empty_pint_glass.png */; };
+		0993905C145E139D00AA5D31 /* empty_pint_glass.png in Resources */ = {isa = PBXBuildFile; fileRef = 09939059145E139D00AA5D31 /* empty_pint_glass.png */; };
+		0993905D145E139D00AA5D31 /* full_pint_glass.png in Resources */ = {isa = PBXBuildFile; fileRef = 0993905A145E139D00AA5D31 /* full_pint_glass.png */; };
+		0993905E145E139D00AA5D31 /* full_pint_glass.png in Resources */ = {isa = PBXBuildFile; fileRef = 0993905A145E139D00AA5D31 /* full_pint_glass.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -87,6 +91,8 @@
 		0931EBCD143738B3007363E4 /* NSDictionary_JSONExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NSDictionary_JSONExtensions.m; path = Extensions/NSDictionary_JSONExtensions.m; sourceTree = "<group>"; };
 		0962F93A1440E7E90051C336 /* Cellar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Cellar.h; sourceTree = "<group>"; };
 		0962F93B1440E7E90051C336 /* Cellar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Cellar.m; sourceTree = "<group>"; };
+		09939059145E139D00AA5D31 /* empty_pint_glass.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = empty_pint_glass.png; sourceTree = "<group>"; };
+		0993905A145E139D00AA5D31 /* full_pint_glass.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = full_pint_glass.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -167,6 +173,8 @@
 		0931EB76143719F9007363E4 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				09939059145E139D00AA5D31 /* empty_pint_glass.png */,
+				0993905A145E139D00AA5D31 /* full_pint_glass.png */,
 				0931EB77143719F9007363E4 /* FoleysBeerApp-Info.plist */,
 				0931EB78143719F9007363E4 /* InfoPlist.strings */,
 				0931EB7B143719F9007363E4 /* main.m */,
@@ -288,6 +296,8 @@
 				0931EB7A143719F9007363E4 /* InfoPlist.strings in Resources */,
 				0931EB83143719F9007363E4 /* MainWindow.xib in Resources */,
 				0931EB89143719F9007363E4 /* RootViewController.xib in Resources */,
+				0993905B145E139D00AA5D31 /* empty_pint_glass.png in Resources */,
+				0993905D145E139D00AA5D31 /* full_pint_glass.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,6 +307,8 @@
 			files = (
 				0931EB9C143719F9007363E4 /* InfoPlist.strings in Resources */,
 				0931EB9E143719F9007363E4 /* FoleysBeerAppTests.h in Resources */,
+				0993905C145E139D00AA5D31 /* empty_pint_glass.png in Resources */,
+				0993905E145E139D00AA5D31 /* full_pint_glass.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

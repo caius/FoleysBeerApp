@@ -28,6 +28,9 @@
     NSLog(@"%d beers saved", [self.beers count]);
     
     [self.tableView reloadData];
+    
+//    NSLog(@"Table row height: %@", self.tableView.rowHeight);
+      
   }];
   
 }
@@ -43,13 +46,15 @@
   return 1;
 }
 
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+- (NSInteger)tableView:(UITableView *)tableView
+ numberOfRowsInSection:(NSInteger)section
 {
   return self.beers.count;
 }
 
 // Customize the appearance of table view cells.
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+- (UITableViewCell *)tableView:(UITableView *)tableView
+         cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
   NSLog(@"cellForRowAtIndexPath");
   static NSString *CellIdentifier = @"Cell";
@@ -75,64 +80,39 @@
     NSString *beerSummary = [NSString stringWithFormat:@"%@", [beer objectForKey:@"abv"]];
     [[cell textLabel] setText:beerName];
     [[cell detailTextLabel] setText:beerSummary];
+    
+    [[cell imageView] setImage:[self emptyPintImage]];
+    [[cell imageView] setHighlightedImage:[self fullPintImage]];
   }
-  
+    
   return cell;
 }
 
-/*
-// Override to support conditional editing of the table view.
-- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    // Return NO if you do not want the specified item to be editable.
-    return YES;
-}
-*/
-
-/*
-// Override to support editing the table view.
-- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    if (editingStyle == UITableViewCellEditingStyleDelete)
-    {
-        // Delete the row from the data source.
-        [tableView deleteRowsAtIndexPaths:[NSArray arrayWithObject:indexPath] withRowAnimation:UITableViewRowAnimationFade];
-    }
-    else if (editingStyle == UITableViewCellEditingStyleInsert)
-    {
-        // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view.
-    }   
-}
-*/
-
-/*
-// Override to support rearranging the table view.
-- (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath
-{
-}
-*/
-
-/*
-// Override to support conditional rearranging of the table view.
-- (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    // Return NO if you do not want the item to be re-orderable.
-    return YES;
-}
-*/
-
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+- (void)tableView:(UITableView *)tableView
+didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
   UITableViewCell *c = [self.tableView cellForRowAtIndexPath:indexPath];
   if ([[[c textLabel] textColor] isEqual:[UIColor blueColor]]) {
     [[c textLabel] setTextColor:[UIColor blackColor]];
+    [[c imageView] setHighlighted:NO];
   } else {
     [[c textLabel] setTextColor:[UIColor blueColor]];
+    [[c imageView] setHighlighted:YES];
   }
   
   [self.tableView deselectRowAtIndexPath:indexPath animated:YES];
   
 //  [self.tableView reloadData];
+}
+
+- (UIImage*) emptyPintImage
+{
+  return [UIImage imageNamed:@"empty_pint_glass.png"];
+}
+
+- (UIImage*) fullPintImage
+{
+  return [UIImage imageNamed:@"full_pint_glass.png"];
 }
 
 @end
